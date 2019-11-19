@@ -11,3 +11,10 @@ def LoadFile(file_name):
         for i in range(len(file_list)):
             file_list[i] = file_list[i][0:len(file_list[i])-1]
         return file_list
+def UpdateString(change_str,character,location):
+    change_list = []
+    for i in range(len(change_str)):
+        change_list.append(change_str[i:i+1])
+    change_list[location] = character
+    string_output = ''.join(change_list)
+    PrintOutput(string_output)
