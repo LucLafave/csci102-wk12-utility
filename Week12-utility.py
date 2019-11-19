@@ -9,7 +9,10 @@ def LoadFile(file_name):
     with open(file_name) as file_in:
         file_list = file_in.readlines()
         for i in range(len(file_list)):
-            file_list[i] = file_list[i][0:len(file_list[i])-1]
+            if i == (len(file_list) - 1):
+                file_list[i] = file_list[i][0:len(file_list[i])]
+            else:
+                file_list[i] = file_list[i][0:len(file_list[i])-1]
         return file_list
 def UpdateString(change_str,character,location):
     change_list = []
@@ -18,3 +21,8 @@ def UpdateString(change_str,character,location):
     change_list[location] = character
     string_output = ''.join(change_list)
     PrintOutput(string_output)
+def FindWordCount(list_find,string_find):
+    count = 0
+    for i in range(len(list_find)):
+        count += list_find[i].count(string_find)
+    return count
