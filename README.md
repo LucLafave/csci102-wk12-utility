@@ -7,8 +7,8 @@ and turned back into a string. For the fourth function I looked through a list a
 word appeared. For the fifth function I looked through the player list and if the player was in the list
 I returned that and the same location but for the scores list. The sixth function I just added two lists 
 togther. For the seventh function I went through one list and searched if that valued appeared in the second list.
-I did this for each value in the first list. In the eigth function I do essentially the same thing but add values 
-that were did not match to a list instead of the ones that match.
+I did this for each value in the first list. If it did match I added that value to an output list. In the eigth function
+I do essentially the same thing but add values that were did not match to a list instead of the ones that match.
 #Luc Lafave
 #CSCI 102 - Section C
 #Week 12 - Part A
